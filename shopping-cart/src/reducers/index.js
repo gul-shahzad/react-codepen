@@ -1,6 +1,9 @@
-import { combineReducers} from 'redux'
 import basketReducer from './basketReducer'
+import { combineReducers } from 'redux'
 
-export default combineReducers({
+// combine all reducers
+const allReducers = combineReducers({
+		basketCounter: basketReducer
+})
 
-});
+export default allReducers

@@ -1,19 +1,22 @@
 import React from 'react'
 import '../App.css'
+import {useSelector} from 'react-redux'
+import {Link} from 'react-router-dom'
 
 function Navbar(){
+	const basketCounter = useSelector( state=> state.basketCounter)
 	return(
 			<header>
 			{/* <div className="overlay"></div> */}
 			<nav>
 				<h2>Foodee</h2>
 				<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li className="cart"><a href="#">
+					<li><Link to="#">Home</Link ></li>
+					<li><Link to="#">About</Link ></li>
+					<li className="cart"><Link to="#">
 						<ion-icon name="cart-outline"></ion-icon>
-						<span>0</span>
-						</a></li>
+						<span>{basketCounter}</span>
+						</Link ></li>
 				</ul>
 			</nav>
 		</header>

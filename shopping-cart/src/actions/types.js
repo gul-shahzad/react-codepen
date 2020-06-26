@@ -1,1 +1,2 @@
 export const ADD_PRODUCT_BASKET = 'ADD_PRODUCT_BASKET'
+export const PRODUCT_ID = 'PRODUCT_ID'

@@ -1,11 +1,17 @@
 import React from 'react'
 import '../App.css'
-import {connect } from 'react-redux'
 import { addBasket } from '../actions/addAction'
+import { useSelector, useDispatch} from 'react-redux'
 
-class Home extends React.Component{
-	render(props){
-		console.log(props)
+function Home(){
+	//const counter = useSelector(state => state.basketCounter)
+	const dispatch = useDispatch()
+	//const ancOnClick = (e) =>{
+		//dispatch(addBasket())
+		//console.log('The link was clicked.'); 
+		//e.preventDefault()
+	//}
+
 		return (
 		<div className="container">
 			<div className="products">
@@ -17,9 +23,11 @@ class Home extends React.Component{
 								alt="Card image cap"
 							/>
 							<div className="card-block">
-								<h4 className="card-title"> Orange</h4>
-								<p className="card-text"> Price: $0.5</p>
-								<a href="#" data-name="Orange" data-price="0.5" className = "add-to-cart btn btn-primary">Add to cart</a>
+								<h4 className="card-title"> Orange1</h4>
+								<p className="card-text"> Price: $1</p>
+								<button onClick={() => dispatch(addBasket("Orange1"))}>Add to cart</button>
+								{/* <a href='javascript:void(0)' onClik = {ancOnClick} >Add to cart</a> */}
+								{/* <Link onClik = {ancOnClick}  data-name="Orange" data-price="0.5" className = "add-to-cart btn btn-primary">Add to cart</Link> */}
 							</div>
 							</div>
 						</div>
@@ -31,9 +39,10 @@ class Home extends React.Component{
 									alt="Card image cap"
 								/>
 								<div className="card-block">
-									<h4 className="card-title"> Orange</h4>
-									<p className="card-text"> Price: $0.5</p>
-									<a href="#" data-name="Orange" data-price="0.5" className = "add-to-cart btn btn-primary">Add to cart</a>
+									<h4 className="card-title"> Orange2</h4>
+									<p className="card-text"> Price: $2</p>
+								  <button onClick={() => dispatch(addBasket("Orange2"))}>Add to cart</button>
+									{/* <a href="#" data-name="Orange" data-price="0.5" className = "add-to-cart btn btn-primary">Add to cart</a> */}
 								</div>
 							</div>
 						</div>					
@@ -45,9 +54,10 @@ class Home extends React.Component{
 									alt="Card image cap"
 								/>
 								<div className="card-block">
-									<h4 className="card-title"> Orange</h4>
-									<p className="card-text"> Price: $0.5</p>
-									<a href="#" data-name="Orange" data-price="0.5" className = "add-to-cart btn btn-primary">Add to cart</a>
+									<h4 className="card-title"> Orange3</h4>
+									<p className="card-text"> Price: $3</p>
+								<button onClick={() => dispatch(addBasket("Orange3"))}>Add to cart</button>
+									{/* <a href="#" data-name="Orange" data-price="0.5" className = "add-to-cart btn btn-primary">Add to cart</a> */}
 								</div>
 							</div>
 						</div>					
@@ -59,9 +69,10 @@ class Home extends React.Component{
 									alt="Card image cap"
 								/>
 								<div className="card-block">
-									<h4 className="card-title"> Orange</h4>
-									<p className="card-text"> Price: $0.5</p>
-									<a href="#" data-name="Orange" data-price="0.5" className = "add-to-cart btn btn-primary">Add to cart</a>
+									<h4 className="card-title"> Orange4</h4>
+									<p className="card-text"> Price: $4</p>
+								  <button onClick={() => dispatch(addBasket("Orange4"))}>Add to cart</button>
+									{/* <a href="#" data-name="Orange" data-price="0.5" className = "add-to-cart btn btn-primary">Add to cart</a> */}
 								</div>
 							</div>
 						</div>					
@@ -70,6 +81,5 @@ class Home extends React.Component{
 			</div>		
 		</div>		
 		)
-	}
 }
-export default connect(null, {addBasket})(Home)
+export default Home

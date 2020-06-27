@@ -1,10 +1,9 @@
-import {ADD_PRODUCT_BASKET} from './types'
-import {PRODUCT_ID} from './types'
+import * as actions from './actionTypes'
 
 
 export const addBasket = (productId)=>{
 	return {
-	type: ADD_PRODUCT_BASKET,
+	type: actions.ADD_PRODUCT_BASKET,
 	payload: productId
 }
 }

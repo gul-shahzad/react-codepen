@@ -50,12 +50,31 @@ li a{
 	text-decoration: none;
 }
 
-.cart ion-icon{
-		vertical-align: bottom;
-		font-size: 20px;
-		padding-right: 5px;
+.cart a{
+	background-color: royalblue;
+	color: white;
+	cursor: pointer;
+	text-decoration: none;
 }
 
+.container, 
+.container.products {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-top: 50px;
+	padding-bottom: 100px;
+
+}
+
+.cart ion-icon{
+	vertical-align: bottom;
+	font-size: 20px;
+	padding-right: 5px;
+}
+
+
+/* -------------------  PRODUCTS CARD ---------------*/
 
 .card{
 	margin-bottom: 20px;
@@ -66,7 +85,117 @@ li a{
 	height: 200px;
 	align-self: center;
 }
-
+/* 
 .products{
 	padding-top: 40px
+}
+ */
+
+/* -------------------  CART PAGE ---------------*/
+
+.container-products{
+	max-width: 650px;
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 50px;
+
+}
+.container-products ion-icon {
+	font-size: 25px;
+	color: royalblue;
+	margin-left: 10px;
+	margin-right: 10px;
+	cursor: pointer;
+
+}
+
+.product-header{
+	width: 100%;
+	max-width: 650px;
+	display: flex;
+	justify-content: flex-start;
+	border-bottom: 4px solid lightgray;
+	margin: 0 auto;
+}
+
+.product-title{
+	width: 45%
+}
+.price{
+	width: 15%;
+	border-bottom: 1px solid lightgray;
+	display: flex;
+	align-items: center;
+}
+
+.quantity{
+	width: 30%;
+	border-bottom: 1px solid lightgray;
+	display: flex;
+	align-items: center;
+}
+
+.total{
+	width: 10%;
+	border-bottom: 1px solid lightgray;
+	display: flex;
+	align-items: center;
+
+}
+
+.product {
+	width: 45%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 10px 0;
+	border-bottom: 1px solid lightgray;
+
+}
+
+.product ion-icon {
+	cursor: pointer;
+}
+.products{
+	width: 100%;
+	display:flex;
+	flex-wrap: wrap;
+
+}
+.products img{
+	width: 75px
+}
+
+.basketTotalContainer {
+	display: flex;
+	justify-content:  flex-end;
+	width: 100%;
+	padding: 10px 0;
+}
+
+.basketTotalTitle{
+	width: 30%;
+}
+
+.basketTotal{
+	width: 10%
+}
+
+@media(max-width: 500px){
+	nav h2 {
+		width: 100%;
+		text-align: center;
+		margin-bottom: 10px;
+	}
+	.sm-hide{
+		display: none;
+	}
+	.products,
+	.product-header {
+		justify-content: center;
+	}
+	.basketTotalContainer{
+		padding-right: 8%;
+
+	}
 }

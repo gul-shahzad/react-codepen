@@ -51,12 +51,12 @@ const  basketReducer =(state = initialState, action) => {
 			}
 				
 		case actions.INCREASE_QUANTITY:
-			console.log("Increased is called")
 			productSelected = { ...state.products[action.payload]}
 			productSelected.numbers +=1
 			return {
 				...state,
 				cartCost: state.cartCost + productSelected.price,
+				basketCounter: state.basketCounter +=1,
 				products: {
 					...state.products,
 					[action.payload]:productSelected
@@ -66,17 +66,34 @@ const  basketReducer =(state = initialState, action) => {
 		case actions.DECREASE_QUANTITY:
 			productSelected = { ...state.products[action.payload]}
 			let cartTotal = 0
-			if (productSelected.numbers <= 0 ){
+			let newBasketCounter = 0
+			if (productSelected.numbers === 0 ){
 				productSelected.numbers = 0 
 				cartTotal = state.cartCost
+				newBasketCounter = state.basketCounter
 			}else{
 				productSelected.numbers -=1
 				cartTotal = state.cartCost - productSelected.price
+				newBasketCounter = state.basketCounter -1
 			}
-			
 			return {
 				...state,
 				cartCost: cartTotal,
+				basketCounter: newBasketCounter,
+				products: {
+					...state.products,
+					[action.payload]:productSelected
+
+				}
+			}
+		case actions.PRODUCT_REMOVE:
+			productSelected = { ...state.products[action.payload]}
+			let productsQty = productSelected.numbers
+			productSelected.numbers = 0
+			return {
+				...state,
+				cartCost: state.cartCost - (productsQty * productSelected.price),
+				basketCounter: state.basketCounter - productsQty,
 				products: {
 					...state.products,
 					[action.payload]:productSelected

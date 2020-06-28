@@ -1,5 +1,7 @@
 import React, {Fragment} from 'react'
 import {productQuantity} from '../actions/productQuantity'
+import {productRemove} from '../actions/productRemove'
+import * as actions from '../actions/actionTypes'
 import {useSelector} from 'react-redux'
 import store from '../store'
 
@@ -24,7 +26,7 @@ function Cart(){
 	return(
 		<Fragment key={index}>
 			<div className="product">
-				<ion-icon name = "close-circle"></ion-icon>
+				<ion-icon onClick={() => store.dispatch(productRemove(actions.PRODUCT_REMOVE, product.name))}  name = "close-circle"></ion-icon>
 				<img src={productImages[index]} />
 				<span className = "sm-hide">{product.name}</span>
 			</div>

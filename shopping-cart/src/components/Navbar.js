@@ -2,7 +2,6 @@ import React from 'react'
 import '../App.css'
 import {useSelector} from 'react-redux'
 import {Link} from 'react-router-dom'
-import store from '../store'
 
 function Navbar(){
 	const basketCounter = useSelector( state=> state.basketCounter)
@@ -13,7 +12,7 @@ function Navbar(){
 				<h2>Foodee</h2>
 				<ul>
 					<li><Link to="/">Home</Link ></li>
-					<li><Link to="#">About</Link ></li>
+					<li><Link to="/products">Products</Link ></li>
 					<li className="cart"><Link to="/cart">
 						<ion-icon name="cart-outline"></ion-icon>
 						<span>{basketCounter}</span>

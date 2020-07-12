@@ -12,7 +12,7 @@ function App() {
 		<div>
 			<div className="section section-header section-all-products section-category gradient-light-blue">
 				{/* Nav bar start */}
-				<navigationbar id="navigationbar" className="navigationbar filter-bar navigationbar-fixed-top navigationbar-transparent">
+				<navbar id="navigationbar" className="navigationbar filter-bar navigationbar-fixed-top navigationbar-transparent">
 					<div className="container">
 						<div className="navigationbar-header">
 							<div data-turbolinks="false">
@@ -55,7 +55,7 @@ function App() {
 							</ul>
 						</div>
 					</div>
-				</navigationbar>
+				</navbar>
 				{/* Nav bar END */}
 				{/* Top banner start */}
 				<div className="info">

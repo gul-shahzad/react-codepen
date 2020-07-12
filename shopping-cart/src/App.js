@@ -3,7 +3,7 @@ import './App.css'
 import Home from './components/Home'
 import Cart from './components/Cart'
 import Navbar from './components/Navbar'
-import ProductsList from './components/ProductsList'
+import Products from './components/products/Products'
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
 
@@ -13,10 +13,9 @@ function App(){
 				<BrowserRouter>
 					<Navbar/>
 					<Switch>
-						<Route exact path = "/" component={Home}/>	
-						<Route path = "/cart" component={Cart}/>	
-						<Route path = "/products" component={ProductsList}/>
-
+						<Route exact path = "/" component={Home}/>
+						<Route path="/products" component= {Products}/>	
+						{/* <Route path = "/cart" component={Cart}/>	 */}
 					</Switch>
 				</BrowserRouter>
 			</div>

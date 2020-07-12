@@ -1,0 +1,37 @@
+[
+	{
+		"id" :1, 
+		"name": "Aloo Gobi",
+		"image": "https://en.wikipedia.org/wiki/Aloo_gobi#/media/File:Aloo_gobi.jpg",
+		"desc": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel justo nibh. Integer ultrices odio quis felis ultricies, ut eleifend arcu porta. In aliquam non sapien sed ornare. Duis posuere.",
+		"price" : 9
+	},
+	{
+		"id" :2, 
+		"name": "Baingan Bhurta",
+		"image": "https://en.wikipedia.org/wiki/Baingan_bharta#/media/File:Baigan_(_Brinjal_)_Bharta.jpg",
+		"desc": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel justo nibh. Integer ultrices odio quis felis ultricies, ut eleifend arcu porta. In aliquam non sapien sed ornare. Duis posuere.",
+		"price" : 9
+	},
+	{
+		"id" :3, 
+		"name": "Biryani",
+		"image": "https://en.wikipedia.org/wiki/Biryani#/media/File:India_food.jpg",
+		"desc": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel justo nibh. Integer ultrices odio quis felis ultricies, ut eleifend arcu porta. In aliquam non sapien sed ornare. Duis posuere.",
+		"price" : 30
+	},
+	{
+		"id" :4, 
+		"name": "Chicken Tikka Masala",
+		"image": "https://en.wikipedia.org/wiki/Chicken_tikka_masala#/media/File:Chicken_tikka_masala.jpg",
+		"desc": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel justo nibh. Integer ultrices odio quis felis ultricies, ut eleifend arcu porta. In aliquam non sapien sed ornare. Duis posuere.",
+		"price" : 40
+	},
+	{
+		"id" :5, 
+		"name": "Daal chana",
+		"image": "https://en.wikipedia.org/wiki/Dal#/media/File:Dal_Fry_Tadka,_Cumin_Rice,_Roasted_Papad_on_the_side.jpg",
+		"desc": " Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vel justo nibh. Integer ultrices odio quis felis ultricies, ut eleifend arcu porta. In aliquam non sapien sed ornare. Duis posuere.",
+		"price" : 50
+	}
+]

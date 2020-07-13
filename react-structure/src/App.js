@@ -230,10 +230,10 @@ function App() {
 														<div className="card-info">
 															<a href>
 																<h3>
-																	Material Blog PRO Laravel
-                              <div className="time pull-right premium-product "> <span>$</span>199 </div>
+																	Name of the product
+                              <div className="time pull-right premium-product "> <span>99</span> SEK </div>
 																</h3>
-																<p>Premium Laravel Cms </p>
+																<p>Premium Laravel Cms adfasa fas adsf af</p>
 															</a>
 														</div>
 													</div>
@@ -369,7 +369,7 @@ function App() {
 															<a href>
 																<h3>
 																	Material Blog PRO Laravel
-                              <div className="time pull-right premium-product "> <span>$</span>199 </div>
+                              <div className="time pull-right premium-product "> <span>99</span>SEK </div>
 																</h3>
 																<p>Premium Laravel Cms </p>
 															</a>
